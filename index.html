@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Keepsake — Digital & Branding Agency</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<input type="checkbox" id="burger-toggle" hidden>
+	<header class="header">
+		<div class="container header-container">
+			<a href="#" class="logo">
+				<span class="logo-circle">K</span>eepsake
+			</a>
+
+			<label for="burger-toggle" class="burger-btn" aria-label="Toggle navigation menu">
+				<span></span>
+				<span></span>
+				<span></span>
+			</label>
+
+			<nav class="desktop-nav">
+				<ul class="nav-list">
+					<li><a href="#" class="nav-link active">HOME</a></li>
+					<li><a href="#about" class="nav-link">ABOUT US</a></li>
+					<li><a href="#works" class="nav-link">OUR WORKS</a></li>
+					<li><a href="#journal" class="nav-link">JOURNAL</a></li>
+					<li><a href="#contact" class="nav-link">CONTACT</a></li>
+				</ul>
+				<button class="btn-icon-fav" aria-label="Favourites">
+					<img src="images/heart.png">
+				</button>
+			</nav>
+		</div>
+	</header>
+
+	<div class="mobile-drawer">
+		<div class="drawer-header">
+			<a href="#" class="logo"><span class="logo-circle">K</span>eepsake</a>
+			<label for="burger-toggle" class="close-btn" aria-label="Close menu">&times;</label>
+		</div>
+		<ul class="drawer-nav">
+			<li><a href="#" class="drawer-link active">HOME <span>&rsaquo;</span></a></li>
+			<li><a href="#about" class="drawer-link">ABOUT US <span>&rsaquo;</span></a></li>
+			<li><a href="#works" class="drawer-link">OUR WORKS <span>&rsaquo;</span></a></li>
+			<li><a href="#journal" class="drawer-link">JOURNAL <span>&rsaquo;</span></a></li>
+			<li><a href="#contact" class="drawer-link">CONTACT <span>&rsaquo;</span></a></li>
+		</ul>
+		<div class="drawer-actions">
+			<a href="#contact" class="btn btn-primary btn-full">
+				<img src="images/mail.png">
+				CONTACT US
+			</a>
+			<button class="btn btn-secondary btn-full btn-fav-drawer">
+				<img src="images/heart1.png">
+				FAVOURITES
+			</button>
+		</div>
+		<div class="drawer-footer">
+			<p class="drawer-label">SAY HELLO</p>
+			<p><a href="mailto:hello@keepsake.studio">hello@keepsake.studio</a></p>
+			<p><a href="tel:+442079460000">+44 20 7946 0000</a></p>
+			<div class="social-icons">
+				<a href="#" class="social-circle rss">rss</a>
+				<a href="#" class="social-circle fb">f</a>
+				<a href="#" class="social-circle tw">tw</a>
+				<a href="#" class="social-circle dr">dr</a>
+				<a href="#" class="social-circle p">p</a>
+			</div>
+		</div>
+	</div>
+
+	<main>
+		<section class="hero-section">
+			<div class="container hero-container">
+				<h1 class="hero-title">WE’RE KEEPSAKE, A DIGITAL & BRANDING AGENCY</h1>
+				<p class="hero-subtitle">Specializing in web design, poster, motion video, based in London. We love to turn ideas into beautiful things.</p>
+				<div class="hero-buttons">
+					<a href="#works" class="btn btn-primary">SEE OUR WORKS</a>
+					<a href="#contact" class="btn btn-secondary">GET IN TOUCH</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section container" id="works">
+			<div class="section-header-wrap">
+				<h2 class="section-title">OUR AWESOME WORKS</h2>
+				
+				<!-- Чипси-фільтри через радіо-кнопки (без JS) -->
+				<input type="radio" name="filter" id="filter-all" class="filter-radio" checked hidden>
+				<input type="radio" name="filter" id="filter-branding" class="filter-radio" hidden>
+				<input type="radio" name="filter" id="filter-identity" class="filter-radio" hidden>
+				<input type="radio" name="filter" id="filter-print" class="filter-radio" hidden>
+				<input type="radio" name="filter" id="filter-web" class="filter-radio" hidden>
+				<input type="radio" name="filter" id="filter-motion" class="filter-radio" hidden>
+
+				<div class="chips-row">
+					<label for="filter-all" class="chip-item">ALL</label>
+					<label for="filter-branding" class="chip-item">BRANDING</label>
+					<label for="filter-identity" class="chip-item">IDENTITY</label>
+					<label for="filter-print" class="chip-item">PRINT</label>
+					<label for="filter-web" class="chip-item">WEB</label>
+					<label for="filter-motion" class="chip-item">MOTION</label>
+				</div>
+
+				<div class="works-grid">
+					<article class="work-card card-branding bg-teal" tabindex="0">
+						<div class="card-default-content">
+							<div class="tag-box rotate-tag">MOCK-UP TAG</div>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">CLOTHES TAG</h3>
+							<span class="card-hover-category">Branding</span>
+						</div>
+					</article>
+
+					<article class="work-card card-identity bg-light" tabindex="0">
+						<div class="card-default-content">
+							<h3 class="paper-title">PIECE<span class="text-accent">PAPER</span></h3>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">PIECE PAPER</h3>
+							<span class="card-hover-category">Identity</span>
+						</div>
+					</article>
+
+					<article class="work-card card-print bg-dark" tabindex="0">
+						<div class="card-default-content">
+							<div class="vinyl-mockup"></div>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">VINYL COVER</h3>
+							<span class="card-hover-category">Print</span>
+						</div>
+					</article>
+
+					<article class="work-card card-web bg-beige" tabindex="0">
+						<div class="card-default-content">
+							<span class="vol-text">VOL. 16</span>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">VOL. 16 COVER</h3>
+							<span class="card-hover-category">Web</span>
+						</div>
+					</article>
+
+					<article class="work-card card-web bg-dark-slate" tabindex="0">
+						<div class="card-default-content">
+							<div class="center-ui-icon">+</div>
+							<p class="ui-text">PROFILE UI</p>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">PROFILE UI</h3>
+							<span class="card-hover-category">Web</span>
+						</div>
+					</article>
+
+					<article class="work-card card-branding bg-peach" tabindex="0">
+						<div class="card-default-content">
+							<div class="open-book-mockup"><span class="teal-rect"></span></div>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">BRAND BOOK</h3>
+							<span class="card-hover-category">Branding</span>
+						</div>
+					</article>
+
+					<article class="work-card card-identity bg-grey" tabindex="0">
+						<div class="card-default-content">
+							<div class="triangle-icon"></div>
+							<h3 class="wallst-title">WallSt.</h3>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">WALLST BRANDING</h3>
+							<span class="card-hover-category">Identity</span>
+						</div>
+					</article>
+
+					<article class="work-card card-branding bg-pink" tabindex="0">
+						<div class="card-default-content">
+							<div class="rotated-card-content">
+								<h3>JOHN DOE</h3>
+								<p>DESIGN STUDIO</p>
+							</div>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">BUSINESS CARD</h3>
+							<span class="card-hover-category">Branding</span>
+						</div>
+					</article>
+
+					<article class="work-card card-motion bg-slate" tabindex="0">
+						<div class="card-default-content">
+							<div class="seal-box">SEAL FABRIC</div>
+						</div>
+						<div class="card-hover-overlay">
+							<span class="plus-circle">+</span>
+							<h3 class="card-hover-title">SEAL FABRIC</h3>
+							<span class="card-hover-category">Motion</span>
+						</div>
+					</article>
+				</div>
+
+				<div class="load-more-wrap">
+					<button class="btn btn-secondary btn-full-mobile">LOAD MORE WORKS</button>
+				</div>
+			</div>
+		</section>
+		<section class="cta-section">
+			<div class="container cta-container">
+				<h2 class="cta-title">WOULD YOU LOVE TO WORK WITH US?</h2>
+				<a href="#contact" class="btn btn-primary">
+					<img src="images/mail.png">
+					CONTACT US
+				</a>
+			</div>
+		</section>
+
+		<section class="section container" id="about">
+			<h2 class="section-title">WHAT DO WE DO</h2>
+			<p class="section-subtitle">We are a small team of designers and makers who help brands look their best online and offline.</p>
+			<div class="services-grid">
+				<article class="service-card">
+					<div class="service-icon-wrap">
+						<img src="images/webdesign.png">
+					</div>
+					<h3 class="service-title">WEB DESIGN</h3>
+					<p class="service-desc">Responsive sites and product interfaces that look sharp on every screen.</p>
+				</article>
+
+				<article class="service-card">
+					<div class="service-icon-wrap">
+						<img src="images/movie.png">
+					</div>
+					<h3 class="service-title">MOTION VIDEO</h3>
+					<p class="service-desc">Explainers, logo animations and social clips that bring brands to life.</p>
+				</article>
+
+				<article class="service-card">
+					<div class="service-icon-wrap">
+						<img src="images/print.png">
+					</div>
+					<h3 class="service-title">PRINT DESIGN</h3>
+					<p class="service-desc">Posters, packaging and stationery prepared to be printed right.</p>
+				</article>
+
+				<article class="service-card">
+					<div class="service-icon-wrap">
+						<img src="images/heart1.png">
+					</div>
+					<h3 class="service-title">ILLUSTRATION</h3>
+					<p class="service-desc">Custom illustrations and icon sets in a style that is yours alone.</p>
+				</article>
+			</div>
+		</section>
+
+		<section class="stats-section">
+			<div class="container stats-grid">
+				<div class="stat-item">
+					<span class="stat-number">120+</span>
+					<span class="stat-label">PROJECTS DONE</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">8</span>
+					<span class="stat-label">YEARS IN CRAFT</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">64</span>
+					<span class="stat-label">HAPPY CLIENTS</span>
+				</div>
+				<div class="stat-item">
+					<span class="stat-number">15</span>
+					<span class="stat-label">DESIGN AWARDS</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="section container">
+			<h2 class="section-title">CLIENTS & KIND WORDS</h2>
+			<p class="section-subtitle">Some of the teams that trusted us with their brands.</p>
+
+			<div class="clients-grid">
+				<span class="client-logo">NORDLY</span>
+				<span class="client-logo">Halcyon</span>
+				<span class="client-logo">ARCO</span>
+				<span class="client-logo">pinewood</span>
+				<span class="client-logo">VELA</span>
+				<span class="client-logo">ostra</span>
+			</div>
+
+			<div class="testimonial-card">
+				<span class="quote-mark">“</span>
+				<p class="testimonial-text">Keepsake turned a vague brief into a brand we are proud of. The team was fast, honest about trade-offs and obsessed with the details.</p>
+				<div class="testimonial-author">
+					<div class="avatar-circle">OM</div>
+					<div class="author-info">
+						<strong class="author-name">OLENA MARCHENKO</strong>
+						<span class="author-title">Marketing Lead, Nordly</span>
+					</div>
+					<div class="slider-dots">
+						<span class="dot active"></span>
+						<span class="dot"></span>
+						<span class="dot"></span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section container" id="journal">
+			<h2 class="section-title">FROM THE JOURNAL</h2>
+			<p class="section-subtitle">Notes on process, case studies and things that inspire us.</p>
+
+			<div class="journal-grid">
+				<article class="journal-card">
+					<div class="journal-thumb bg-journal-1"></div>
+					<div class="journal-content">
+						<span class="journal-meta">OCT 13, 2026 / IDENTITY</span>
+						<h3 class="journal-title">SOLLICITUDIN TORTOR INCEPTOS</h3>
+						<p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<a href="#" class="read-more">READ MORE &rsaquo;</a>
+					</div>
+				</article>
+
+				<article class="journal-card">
+					<div class="journal-thumb bg-journal-2"></div>
+					<div class="journal-content">
+						<span class="journal-meta">OCT 23, 2026 / BRANDING</span>
+						<h3 class="journal-title">AMET INCEPTOS FRINGILLA FUSCE</h3>
+						<p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<a href="#" class="read-more">READ MORE &rsaquo;</a>
+					</div>
+				</article>
+
+				<article class="journal-card">
+					<div class="journal-thumb bg-journal-3"></div>
+					<div class="journal-content">
+						<span class="journal-meta">SEP 19, 2026 / IDENTITY</span>
+						<h3 class="journal-title">CURSUS MALESUADA JUSTO</h3>
+						<p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<a href="#" class="read-more">READ MORE &rsaquo;</a>
+					</div>
+				</article>
+
+				<article class="journal-card">
+					<div class="journal-thumb bg-journal-4"></div>
+					<div class="journal-content">
+						<span class="journal-meta">SEP 27, 2026 / BRANDING</span>
+						<h3 class="journal-title">ORNARE CURSUS BIBENDUM PURUS</h3>
+						<p class="journal-excerpt">Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+						<a href="#" class="read-more">READ MORE &rsaquo;</a>
+					</div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer" id="contact">
+		<div class="container footer-top">
+			<div class="footer-links-col">
+				<h4 class="footer-col-title">STUDIO</h4>
+				<ul>
+					<li><a href="#about">About us</a></li>
+					<li><a href="#works">Our works</a></li>
+					<li><a href="#journal">Journal</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-links-col">
+				<h4 class="footer-col-title">SERVICES</h4>
+				<ul>
+					<li><a href="#">Web design</a></li>
+					<li><a href="#">Motion video</a></li>
+					<li><a href="#">Print design</a></li>
+					<li><a href="#">Illustration</a></li>
+					<li><a href="#">Brand strategy</a></li>
+				</ul>
+			</div>
+
+			<div class="footer-newsletter">
+				<h4 class="footer-col-title">NEWSLETTER</h4>
+				<p class="newsletter-desc">Fresh case studies and design notes, once a month.</p>
+				<form class="newsletter-form" action="#" method="POST">
+					<div class="input-group">
+						<label for="newsletter-email" class="visually-hidden">Your email address</label>
+						<input type="email" id="newsletter-email" placeholder="Your email address" required aria-describedby="email-error">
+						<button type="submit" class="btn btn-primary">SUBSCRIBE</button>
+					</div>
+					<label class="checkbox-label">
+						<input type="checkbox" required>
+						<span>I agree to the privacy policy</span>
+					</label>
+				</form>
+			</div>
+		</div>
+
+		<div class="container footer-bottom">
+			<p class="copyright">&copy; 2026 Keepsake. All rights reserved.</p>
+			<div class="social-icons">
+				<a href="#" class="social-circle rss">rss</a>
+				<a href="#" class="social-circle fb">f</a>
+				<a href="#" class="social-circle tw">tw</a>
+				<a href="#" class="social-circle dr">dr</a>
+				<a href="#" class="social-circle p">p</a>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" class="back-to-top" aria-label="Back to top">&uarr;</a>
+
+</body>
+</html>
